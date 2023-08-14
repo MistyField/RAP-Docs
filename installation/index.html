@@ -456,6 +456,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    Supported platforms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-with-dockerrecommended" class="md-nav__link">
     Install with docker(recommended)
   </a>
@@ -562,6 +569,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    Supported platforms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-with-dockerrecommended" class="md-nav__link">
     Install with docker(recommended)
   </a>
@@ -596,8 +610,29 @@
 <p>The client does not need to install any program, please 
 visit <a href="http://54.169.242.254:5000/buildReactions">http://54.169.242.254:5000</a>!</p>
 </div>
+<h2 id="supported-platforms">Supported platforms</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Windows</th>
+<th style="text-align: center;">Linux</th>
+<th style="text-align: center;">macOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">✅(wsl2)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
 <h2 id="install-with-dockerrecommended">Install with docker(recommended)</h2>
 <p>Since the installation process requires docker, please install <a href="https://www.docker.com/">docker</a> first.</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>mistyfield/kinetichub:latest<span class="w"> </span>mistyfield/rap:latest
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">3306</span>:3306<span class="w"> </span>kinetichub
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>rap
+</code></pre></div>
 <h2 id="install-with-source-code">Install with source code</h2>
 <p>This project requires the use of docker and yarn for deployment, so please install <a href="https://www.docker.com/">docker</a> and <a href="https://nodejs.org/en">node.js</a> with <a href="https://yarnpkg.com/">yarn</a> first!</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://gitlab.igem.org/2023/software-tools/fudan
