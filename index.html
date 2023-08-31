@@ -239,8 +239,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="how_RAP_works/" class="md-tabs__link">
+      <a href="RAP_Builder/" class="md-tabs__link">
         How RAP works
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://2023.igem.wiki/fudan/software" class="md-tabs__link">
+        Wiki
       </a>
     </li>
   
@@ -356,8 +372,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome-to-rap" class="md-nav__link">
-    Welcome to RAP
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learn-more" class="md-nav__link">
+    Learn more
   </a>
   
 </li>
@@ -420,7 +443,21 @@
   
     <li class="md-nav__item">
       <a href="get_started/" class="md-nav__link">
-        Build your pRAP system with RAP
+        Quickstart of RAP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/" class="md-nav__link">
+        Advanced
       </a>
     </li>
   
@@ -517,8 +554,71 @@
   
   
     <li class="md-nav__item">
-      <a href="how_RAP_works/" class="md-nav__link">
-        How RAP works
+      <a href="RAP_Builder/" class="md-nav__link">
+        RAP Builder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KineticHub/" class="md-nav__link">
+        KineticHub
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Wiki
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Wiki
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://2023.igem.wiki/fudan/software" class="md-nav__link">
+        None
       </a>
     </li>
   
@@ -541,7 +641,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -560,8 +660,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome-to-rap" class="md-nav__link">
-    Welcome to RAP
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learn-more" class="md-nav__link">
+    Learn more
   </a>
   
 </li>
@@ -589,12 +696,11 @@
 
 
 <h1 id="rap-documentation">RAP Documentation</h1>
-<h2 id="welcome-to-rap">Welcome to RAP</h2>
 <p><img alt="" src="https://badgen.net/badge/platform/Linux,macOS,Windows?list=%7C" />
 <img alt="" src="https://badgen.net/static/Python/3.10/blue" />
 <img alt="" src="https://badgen.net/static/vue/2.6+/green" />
 <img alt="" src="https://badgen.net/static/license/CC%20BY%204.0/blue" />
-<img alt="" src="https://badgen.net/docker/size/mistyfield/rap/0.1.0-beta" /></p>
+<img alt="" src="https://badgen.net/docker/size/mistyfield/rap/0.2.0-beta" /></p>
 <hr>
 <p><center>
     <img src="assets/RAP_logo.png" alt="RAP_logo" style="zoom: 15%;" />
@@ -603,11 +709,38 @@
 <p class="admonition-title">🤝 Seek for collaboration!</p>
 <p>If your team needs to use multiple enzyme coupling to participate in a module, we 
 welcome the opportunity to collaborate with you and offer you help with wet and dry lab, 
-and we are in desire of your feedback and comment on RAP!</p>
+and we are in desire of your feedback and comment on RAP!
+If you are interested in RAP, don't feel hensitate to email to us <a href="mailto:20301050198@fudan.edu.cn">here</a>!</p>
 </div>
-<p>RAP is a software developed by iGEM 2023, Fudan Team for bottom-up design of pRAP systems.</p>
+<p><a href="http://54.169.242.254:5000">RAP</a> is a software developed by iGEM 2023, Fudan Team for bottom-up design of Ribozyme-Assisted Polycistronic co-expression system (pRAP system). RAP mainly consists of three parts:</p>
+<ul>
+<li><strong>KineticHub</strong></li>
+<li><strong>RAP builder</strong></li>
+<li><strong>PartHub2</strong></li>
+</ul>
+<h2 id="features">Features</h2>
+<p>Among its key ingredients, RAP supports:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Intuitive <span class="arithmatex">\(k_{cat}\)</span> Search</label><label for="__tabbed_1_2">One-Click pRAP system Sequence Building</label><label for="__tabbed_1_3">Diversified Part Search</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>KineticHub allows you to retrieve more than 70,000 <span class="arithmatex">\(k_{cat}\)</span> records from 7,000+ EC numbers in a single click, and supports the addition of experimental data and the integration of deep learning methods to predict kcat. </p>
+</div>
+<div class="tabbed-block">
+<p>Combined with the <span class="arithmatex">\(k_{cat}\)</span> of the enzyme, RAP Builder can automatically calculate optimal enzyme concentration for balanced linear biochemical reactions, and our Monte Carlo algorithm will derive the proper synthetic RBS, and automatically generate the sequence file in GeneBank format.</p>
+</div>
+<div class="tabbed-block">
+<p>We upgraded PartHub and launched PartHub2, which provides a more intuitive and easy-to-use user interface and designs a diversified recommendation algorithm based on graph learning.</p>
+</div>
+</div>
+</div>
+<h2 id="learn-more">Learn more</h2>
+<ul>
+<li><a href="get_started/">User Guide</a></li>
+<li><a href="installation/">Installation</a></li>
+<li><a href="https://2023.igem.wiki/fudan/software">Wiki</a></li>
+</ul>
 <h2 id="leave-a-comment-to-us">Leave a comment to us!</h2>
-<p>Your comments and suggestions are vital to further refine and improve RAP, so feel free to click <a href="http://54.169.242.254:5000/comment">here</a></p>
+<p>Your comments and suggestions are vital to further refine and improve RAP, so feel free to click <a href="http://54.169.242.254:5000/comment">here</a>!</p>
 
 
 
