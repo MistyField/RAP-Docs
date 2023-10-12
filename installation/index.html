@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../advanced/">
+        <link rel="prev" href="../get_started/">
       
       
         <link rel="next" href="../RAP_Builder/">
@@ -37,8 +37,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Quicksand";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -395,20 +395,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
-        Advanced
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -578,6 +564,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PartHub2/" class="md-nav__link">
+        PartHub2
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -722,9 +722,10 @@ visit <a href="http://54.169.242.254:5000/buildReactions">http://54.169.242.254:
 </table>
 <h2 id="install-with-dockerrecommended">Install with docker(recommended)</h2>
 <p>Since the installation process requires docker, please install <a href="https://www.docker.com/">docker</a> first.</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>mistyfield/kinetichub:latest<span class="w"> </span>mistyfield/rap:latest
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>mistyfield/kinetichub:v0.1.0-beta<span class="w"> </span>mistyfield/rap:0.4.1-beta<span class="w"> </span>mistyfield/parthub:0.1.0-beta
 docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">3306</span>:3306<span class="w"> </span>kinetichub
 docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>rap
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">7474</span>:7474<span class="w"> </span>-p<span class="w"> </span><span class="m">7687</span>:7687<span class="w"> </span>parthub
 </code></pre></div>
 <h2 id="install-with-source-code">Install with source code</h2>
 <p>This project requires the use of docker and yarn for deployment, so please install <a href="https://www.docker.com/">docker</a> and <a href="https://nodejs.org/en">node.js</a> with <a href="https://yarnpkg.com/">yarn</a> first!</p>
