@@ -10,10 +10,22 @@ hide:
     The client does not need to install any program, please 
     visit [http://54.169.242.254:5000](http://54.169.242.254:5000/buildReactions)!
 
+## Supported platforms
+
+|    Windows     |  Linux   |  macOS   |
+| :------------: | :------: | :------: |
+| ✅(wsl2, amd64) | ✅(amd64) | ✅(amd64) |
 
 ## Install with docker(recommended)
 
 Since the installation process requires docker, please install [docker](https://www.docker.com/) first.
+
+```shell
+docker pull mistyfield/kinetichub:v0.1.0-beta mistyfield/rap:0.4.1-beta mistyfield/parthub:0.1.0-beta
+docker run -p 3306:3306 kinetichub
+docker run -p 5000:5000 rap
+docker run -p 7474:7474 -p 7687:7687 parthub
+```
 
 ## Install with source code
 

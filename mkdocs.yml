@@ -7,13 +7,18 @@ nav:
   - Installation:
     - installation.md
   - How RAP works:
-    - how_RAP_works.md
+    - RAP_Builder.md
+    - KineticHub.md
+    - PartHub2.md
+  - Wiki:
+    - https://2023.igem.wiki/fudan/software
 theme:
   name: material
   logo: assets/RAP_logo.ico
   favicon: assets/RAP_logo.ico
+  language: en
   font:
-    text: Barlow
+    text: Quicksand
   features:
     - navigation.tracking
     - navigation.tabs
@@ -35,15 +40,24 @@ theme:
 
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra:
   social:
     - icon: fontawesome/solid/envelope
-      link: mailto:2030105198@fudan.edu.cn
+      link: mailto:20301050198@fudan.edu.cn
     - icon: fontawesome/brands/slack
       link: https://igem-community.slack.com/team/U046NMGM7T4
     - icon: fontawesome/brands/gitlab
